@@ -1,0 +1,110 @@
+/* Set the font family, background color, margin, and padding for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightseagreen;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the maximum width, margin, padding, background color, and box shadow for the container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: lightgreen;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Centered the heading, set the margin, and color */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+  font-weight: bolder;
+}
+
+/* Set the margin for the gallery section */
+#gallery {
+  margin-top: 20px;
+}
+
+/* Centered the figure element and set the margin and padding */
+figure {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Centered the featured image, set the margin, border, and box shadow */
+#featured-image {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Set the margin, font style, and color for the image title */
+#image-title {
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
+}
+
+/* Centered the subheading, set the margin, font size, font weight, color, and text transform */
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Set the list style, padding, margin, and text alignment for the thumbnail list */
+#thumbnail-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Set the display, margin, and padding for the list items in the thumbnail list */
+#thumbnail-list li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Removed the margin from the last list item in the thumbnail list */
+#thumbnail-list li:last-child {
+  margin-right: 0;
+}
+
+/* Set the border, cursor, opacity, and transition for the thumbnail images */
+#thumbnail-list img {
+  border: 2px solid #fff;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  background-color: #f2f2f2;
+}
+
+/* Set the opacity, scale, and background color for the thumbnail images on hover */
+#thumbnail-list img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  background-color: #ddd;
+}
+
+/* Set the border color, opacity, and filter for the active thumbnail image */
+#thumbnail-list img.active {
+  border-color: #333;
+  opacity: 1;
+  filter: none;
+}
+
+/* Set the filter for the inactive thumbnail images */
+#thumbnail-list img:not(.active) {
+  filter: grayscale(100%);
+}
